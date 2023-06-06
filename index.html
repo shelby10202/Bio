@@ -5,9 +5,17 @@
     <style>
 
 
-  body{
-  background-color: black ;
- }
+body{
+  background-color: black;
+}
+
+
+
+
+
+
+
+
 
  
         @keyframes color-change {
@@ -45,15 +53,49 @@
             font-size: 40px;
 
         }
-        .container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50vh;
+    
+        .iframe-container {
+  display: flex;
+}
+
+iframe {
+  flex: 1;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .iframe-container {
+    flex-direction: column;
+  }
+
+  iframe {
+    height: 50vh;
+  }
+}
 
 
 
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
@@ -84,15 +126,11 @@
             
 
 
-<div class="container">
+<div class="iframe-container">
 
 <iframe src="https://embed.spotify.com/?uri=spotify:user:Raphael_Idalino:playlist:3rTBpjbvIkg5wYh0wnyZHW" 
-height="390" width="800"  frameborder="0"></iframe>
+height="390" width="500"  frameborder="0"></iframe>
 
-
-</div>
-
-<div class="container">
 
     <iframe src="https://embed.spotify.com/?uri=spotify:user:Raphael_Idalino:playlist:58wzcfivEFVVlQGt9JnhuD"
     height="390" width="800"  frameborder="0" ></iframe>
